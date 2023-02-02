@@ -18,13 +18,13 @@
 </p>
 
 <p align="center">
-    <a href="https://www.youtube.com/watch?v=aV9bT_IpHfc" target="_blank">
+    <a href="https://react-interest-calculator-practice-2023.vercel.app/" target="_blank">
         <img src="https://user-images.githubusercontent.com/88015479/213037967-fe3a7ed6-df46-4e0b-ba93-805ce9623012.png" width="800">
     </a>
 </p>
 
 <p align="center">
-    <strong>(click on image to see a video preview)</strong>
+    <strong>(click on image to get a live test or watch a <a href="https://www.youtube.com/watch?v=aV9bT_IpHfc" target="_blank">video preview</a>)</strong>
 </p>
 
 <h2>
