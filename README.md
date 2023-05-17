@@ -19,7 +19,7 @@
 
 <p align="center">
     <a href="https://react-interest-calculator-practice-2023.vercel.app/" target="_blank">
-        <img src="https://user-images.githubusercontent.com/88015479/213037967-fe3a7ed6-df46-4e0b-ba93-805ce9623012.png" width="800">
+        <img src="https://github.com/hozlucas28/React-Interest-Calculator-Practice-2023/assets/88015479/9a2cc42b-45b2-4146-ba96-cdc405904f2f" width="800">
     </a>
 </p>
 
