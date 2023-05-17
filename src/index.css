@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+	--color-main: #e8e4e6;
+	--color-text: #001e1d;
+	--color-headline: #fffffe;
+	--color-paragraph: #abd1c6;
+	--color-button: #f9bc60;
+	--color-button-text: #001e1d;
+	--color-button-hover: #e0a956;
+	--color-highlight: #f9bc60;
+	--color-error: #e16162;
+	--color-background: #004643;
+}
+
 html,
 body,
 #root {
 	height: 100%;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 html * {
@@ -11,4 +27,5 @@ html * {
 
 body {
 	margin: 0px;
+	background-color: var(--color-background);
 }

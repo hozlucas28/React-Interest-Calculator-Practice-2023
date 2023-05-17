@@ -1,13 +1,15 @@
 import { useState } from 'react';
 
-import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
+import { Formik, Form } from 'formik';
 
-import Container from './components/Container.js';
-import Section from './components/Section.js';
-import Input from './components/Input.js';
-import Button from './components/Button.js';
-import Balance from './components/Balance.js';
+import { TEXTS } from './constants/TEXTS.js';
+
+import Container from './components/Container';
+import Section from './components/Section';
+import Input from './components/Input';
+import Button from './components/Button';
+import Balance from './components/Balance';
 
 const compoundInterest = (deposit, contribution, years, rate) => {
 	let total = deposit;
@@ -34,6 +36,7 @@ function App() {
 			Number(years),
 			Number(rate)
 		);
+
 		setBalance(formatter.format(total));
 	};
 
@@ -50,42 +53,46 @@ function App() {
 					onSubmit={handleSubmit}
 					validationSchema={Yup.object({
 						deposit: Yup.number()
-							.required('Obligatorio')
-							.typeError('Debe ser un número'),
+							.required(TEXTS.form.inputs.errors.required)
+							.typeError(TEXTS.form.inputs.errors.type),
 						contribution: Yup.number()
-							.required('Obligatorio')
-							.typeError('Debe ser un número'),
+							.required(TEXTS.form.inputs.errors.required)
+							.typeError(TEXTS.form.inputs.errors.type),
 						years: Yup.number()
-							.required('Obligatorio')
-							.typeError('Debe ser un número'),
+							.required(TEXTS.form.inputs.errors.required)
+							.typeError(TEXTS.form.inputs.errors.type),
 						rate: Yup.number()
-							.required('Obligatorio')
-							.typeError('Debe ser un número')
-							.min(0, 'El valor mínimo es 0')
-							.max(1, 'El valor máximo es 1')
+							.required(TEXTS.form.inputs.errors.required)
+							.typeError(TEXTS.form.inputs.errors.type)
+							.min(0, TEXTS.form.inputs.errors.min)
+							.max(1, TEXTS.form.inputs.errors.max)
 					})}
 				>
 					<Form>
 						<Input
 							name="deposit"
-							label="Depósito inicial"
+							label={TEXTS.form.labels.deposit.text}
 						></Input>
 						<Input
 							name="contribution"
-							label="Contribución anual"
+							label={TEXTS.form.labels.contribution.text}
 						></Input>
 						<Input
 							name="years"
-							label="Años"
+							label={TEXTS.form.labels.years.text}
 						></Input>
 						<Input
 							name="rate"
-							label="Interés estimado"
+							label={TEXTS.form.labels.rate.text}
 						></Input>
-						<Button type="submit">Calcular</Button>
+						<Button type="submit">{TEXTS.form.submit.text}</Button>
 					</Form>
 				</Formik>
-				{balance !== '' ? <Balance>Balance final: {balance}</Balance> : null}
+				{balance !== '' ? (
+					<Balance>
+						{TEXTS.result.text} {balance}
+					</Balance>
+				) : null}
 			</Section>
 		</Container>
 	);

@@ -8,7 +8,7 @@ const Control = styled.div`
 const Label = styled.label`
 	margin-bottom: 5px;
 	display: block;
-	color: #000;
+	color: var(--color-text);
 `;
 
 const MyInput = styled.input`
@@ -17,10 +17,14 @@ const MyInput = styled.input`
 	padding: 8px;
 	border: solid 1px #b1b3b5;
 	outline: none;
+
+	&:focus-visible {
+		border-color: var(--color-highlight);
+	}
 `;
 
 const ErrorMessage = styled.div`
-	color: #f00;
+	color: var(--color-error);
 `;
 
 const Input = ({ label, ...props }) => {
