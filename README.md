@@ -19,12 +19,12 @@
 
 <p align="center">
     <a href="https://react-interest-calculator-practice-2023.vercel.app/" target="_blank">
-        <img src="https://github.com/hozlucas28/React-Interest-Calculator-Practice-2023/assets/88015479/9a2cc42b-45b2-4146-ba96-cdc405904f2f" width="800">
+        <img src="https://github.com/hozlucas28/React-Image-Search-Practice-2023/assets/88015479/dc5e6ec2-a554-426b-8266-fa839b6112c8" width="800">
     </a>
 </p>
 
 <p align="center">
-    <strong>(click on image to get a live test or watch a <a href="https://www.youtube.com/watch?v=aV9bT_IpHfc" target="_blank">video preview</a>)</strong>
+    <strong>(watch a <a href="https://react-interest-calculator-practice-2023.vercel.app/" target="_blank">live test</a> or a <a href="https://www.youtube.com/watch?v=aV9bT_IpHfc" target="_blank">video preview</a>)</strong>
 </p>
 
 <h2>
