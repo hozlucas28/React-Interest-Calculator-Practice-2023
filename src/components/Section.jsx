@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 const Section = styled.section`
-	max-width: 500px;
-	min-width: 250px;
+	width: 500px;
 	padding: 20px 25px;
 	border-top: solid 4px var(--color-highlight);
 	background-color: var(--color-main);
