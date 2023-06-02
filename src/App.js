@@ -71,18 +71,22 @@ function App() {
 					<Form>
 						<Input
 							name="deposit"
+							type="number"
 							label={TEXTS.form.labels.deposit.text}
 						></Input>
 						<Input
 							name="contribution"
+							type="number"
 							label={TEXTS.form.labels.contribution.text}
 						></Input>
 						<Input
 							name="years"
+							type="number"
 							label={TEXTS.form.labels.years.text}
 						></Input>
 						<Input
 							name="rate"
+							type="number"
 							label={TEXTS.form.labels.rate.text}
 						></Input>
 						<Button type="submit">{TEXTS.form.submit.text}</Button>
