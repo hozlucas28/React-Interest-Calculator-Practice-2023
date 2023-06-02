@@ -37,7 +37,13 @@ function App() {
 			Number(rate)
 		);
 
-		setBalance(formatter.format(total));
+		const formatedBalance = formatter.format(total);
+		const newBalance =
+			formatedBalance.length < 14
+				? formatedBalance
+				: formatedBalance.slice(0, 12) + '...';
+
+		setBalance(newBalance);
 	};
 
 	return (
@@ -54,13 +60,17 @@ function App() {
 					validationSchema={Yup.object({
 						deposit: Yup.number()
 							.required(TEXTS.form.inputs.errors.required)
-							.typeError(TEXTS.form.inputs.errors.type),
+							.typeError(TEXTS.form.inputs.errors.type)
+							.min(0, TEXTS.form.inputs.errors.min),
 						contribution: Yup.number()
 							.required(TEXTS.form.inputs.errors.required)
-							.typeError(TEXTS.form.inputs.errors.type),
+							.typeError(TEXTS.form.inputs.errors.type)
+							.min(0, TEXTS.form.inputs.errors.min),
 						years: Yup.number()
 							.required(TEXTS.form.inputs.errors.required)
-							.typeError(TEXTS.form.inputs.errors.type),
+							.typeError(TEXTS.form.inputs.errors.type)
+							.min(0, TEXTS.form.inputs.errors.min)
+							.max(100, TEXTS.form.inputs.errors.max),
 						rate: Yup.number()
 							.required(TEXTS.form.inputs.errors.required)
 							.typeError(TEXTS.form.inputs.errors.type)
