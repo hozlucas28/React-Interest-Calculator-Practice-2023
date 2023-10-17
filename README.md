@@ -19,7 +19,7 @@
 
 <p align="center">
     <a href="https://react-interest-calculator-practice-2023.vercel.app/" target="_blank">
-        <img src="https://github.com/hozlucas28/React-Image-Search-Practice-2023/assets/88015479/dc5e6ec2-a554-426b-8266-fa839b6112c8" width="800">
+        <img src="./.github/preview.png" width="800">
     </a>
 </p>
 
